@@ -15,9 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bank-angular-monorepo/button": ["libs/shared/ui/src/index.ts"],
       "@bank-angular-monorepo/environments": [
         "libs/shared/root/enviroments/src/index.ts"
+      ],
+      "@bank-angular-monorepo/interfaces": [
+        "libs/shared/interfaces/src/index.ts"
+      ],
+      "@bank-angular-monorepo/ui-components": [
+        "libs/shared/ui-components/src/index.ts"
       ]
     }
   },
