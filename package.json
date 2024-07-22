@@ -3,6 +3,12 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "nx": "nx",
+    "start": "nx serve",
+    "build": "nx build",
+    "test": "nx test",
+    "lint": "nx workspace-lint && nx lint",
+    "e2e": "nx e2e",
     "angular-admin-banking": "npx nx serve admin-banking --port 4200",
     "angular-operation-banking": "npx nx serve operation-banking --port 4201",
     "prepare": "husky install"
