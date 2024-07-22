@@ -5,7 +5,7 @@
   "scripts": {
     "angular-admin-banking": "npx nx serve admin-banking --port 4200",
     "angular-operation-banking": "npx nx serve operation-banking --port 4201",
-    "prepare": "husky init"
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
