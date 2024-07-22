@@ -8,12 +8,16 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/admin-banking",
         "index": "apps/admin-banking/src/index.html",
         "browser": "apps/admin-banking/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/admin-banking/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -22,7 +26,9 @@
             "input": "apps/admin-banking/public"
           }
         ],
-        "styles": ["apps/admin-banking/src/styles.scss"],
+        "styles": [
+          "apps/admin-banking/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -72,7 +78,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/admin-banking/jest.config.ts"
       }
@@ -85,6 +93,10 @@
         "staticFilePath": "dist/apps/admin-banking/browser",
         "spa": true
       }
+    },
+    "deploy": {
+      "dependsOn": "build",
+      "command": ""
     }
   }
 }
