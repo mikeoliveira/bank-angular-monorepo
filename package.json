@@ -6,7 +6,7 @@
     "nx": "nx",
     "start": "nx serve",
     "build:admin-banking": "nx build admin-banking",
-    "build:operation-banking": "nx build admin-banking",
+    "build:operation-banking": "nx build operation-banking",
     "build:all": "npm run build:admin-banking && npm run build:operation-banking",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
