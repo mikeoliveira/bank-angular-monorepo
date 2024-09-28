@@ -23,7 +23,8 @@
       ],
       "@bank-angular-monorepo/ui-components": [
         "libs/shared/ui-components/src/index.ts"
-      ]
+      ],
+      "@mk/storage": ["libs/storage/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
